@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/showSingersFragment">
+
+    <fragment
+        android:id="@+id/showSingersFragment"
+        android:name="com.example.singertracker.ui.singer.showsingers.ShowSingersFragment"
+        android:label="fragment_show_singers"
+        tools:layout="@layout/fragment_show_singers" >
+        <action
+            android:id="@+id/action_showSingersFragment_to_SIngerFragment"
+            app:destination="@id/SIngerFragment" />
+        <action
+            android:id="@+id/action_showSingersFragment_to_newSIngerFragment"
+            app:destination="@id/newSIngerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newSIngerFragment"
+        android:name="com.example.singertracker.ui.singer.newsinger.NewSIngerFragment"
+        android:label="fragment_new_s_inger"
+        tools:layout="@layout/fragment_new_s_inger" >
+        <action
+            android:id="@+id/action_newSIngerFragment_to_showSingersFragment"
+            app:destination="@id/showSingersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SIngerFragment"
+        android:name="com.example.singertracker.ui.singer.SIngerFragment"
+        android:label="fragment_s_inger"
+        tools:layout="@layout/fragment_s_inger" >
+        <action
+            android:id="@+id/action_SIngerFragment_to_showSingersFragment"
+            app:destination="@id/showSingersFragment" />
+    </fragment>
+</navigation>
