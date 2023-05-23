@@ -16,6 +16,4 @@ var singers = mutableListOf<SingerModel>(
         "ROCK"
     )
 
-)buildFeatures {
-        dataBinding true
-    }
+)
