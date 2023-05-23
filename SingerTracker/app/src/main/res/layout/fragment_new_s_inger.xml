@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="INGRESA UN NUEVO ARTISTA"
+            android:text="@string/new_artisrt"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="@dimen/big_text"
@@ -75,7 +75,7 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Agregar"
+            android:text="@string/save_string"
             android:onClick="@{() -> viewmodel.createNewSinger()}"
 
             >
