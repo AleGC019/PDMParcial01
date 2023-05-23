@@ -8,6 +8,8 @@ import com.example.singertracker.data.singers
 import com.example.singertracker.databinding.SingerItemBinding
 
 class SingerAdapter(private val clickListener: (SingerModel) -> Unit): RecyclerView.Adapter<SingerViewHolder>(){
+
+    private val singers = ArrayList<SingerModel>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SingerViewHolder {
         val binding = SingerItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return SingerViewHolder(binding)

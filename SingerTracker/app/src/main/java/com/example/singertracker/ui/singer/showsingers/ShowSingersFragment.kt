@@ -52,9 +52,8 @@ class ShowSingersFragment : Fragment() {
     private fun setRecyclerView(view: View) {
         binding.recyclerViewSingers.layoutManager = LinearLayoutManager(view.context)
 
-        adapter = SingerAdapter{ SingerSelected ->
-            showSelectedItem(SingerSelected)
-        }
+        adapter = SingerAdapter { singerSelected ->
+            showSelectedItem(singerSelected) }
 
         binding.recyclerViewSingers.adapter = adapter
 
